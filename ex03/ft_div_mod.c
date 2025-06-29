@@ -5,10 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lilian <lilian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/28 21:28:03 by lilian            #+#    #+#             */
-/*   Updated: 2025/06/29 17:39:46 by lilian           ###   ########.fr       */
+/*   Created: 2025/06/29 21:20:02 by lilian            #+#    #+#             */
+/*   Updated: 2025/06/29 21:31:01 by lilian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod()
-{}
+void	ft_div_mod(int a, int b, int *div, int *mod)
+{
+	*div = a / b;
+	*mod = a % b;
+}
