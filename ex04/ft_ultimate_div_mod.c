@@ -6,7 +6,17 @@
 /*   By: lilian <lilian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 21:47:42 by lilian            #+#    #+#             */
-/*   Updated: 2025/06/29 21:47:43 by lilian           ###   ########.fr       */
+/*   Updated: 2025/06/30 07:56:38 by lilian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+void	ft_ultimate_div_mod(int *a, int *b)
+{
+	int mod;
+	int div;
+
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
+}
