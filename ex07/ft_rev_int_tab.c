@@ -6,21 +6,18 @@
 /*   By: lilian <lilian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 08:02:14 by lilian            #+#    #+#             */
-/*   Updated: 2025/06/30 08:21:09 by lilian           ###   ########.fr       */
+/*   Updated: 2025/06/30 09:35:11 by lilian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void ft_rev_int_tab(int *tab, int size)
 {
-	int	*tabl[size];
-	int	tab2[size];
+	int	tabl[size];
 	int	i;
-
-	*tab = tabl;
 	i = 0;
-	while (size != 0)
+	while (size > 0)
 	{
-		*tabl[size] = tab2[i];
+		tab[size] = tabl[i];
 		i++;
 		size--;
 	}
